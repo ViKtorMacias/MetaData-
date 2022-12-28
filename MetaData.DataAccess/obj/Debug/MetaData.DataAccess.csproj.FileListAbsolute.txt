@@ -1,0 +1,7 @@
+C:\Git\MetaData-\MetaData.DataAccess\bin\Debug\MetaData.DataAccess.dll.config
+C:\Git\MetaData-\MetaData.DataAccess\bin\Debug\MetaData.DataAccess.dll
+C:\Git\MetaData-\MetaData.DataAccess\bin\Debug\MetaData.DataAccess.pdb
+C:\Git\MetaData-\MetaData.DataAccess\obj\Debug\MetaData.DataAccess.csproj.AssemblyReference.cache
+C:\Git\MetaData-\MetaData.DataAccess\obj\Debug\MetaData.DataAccess.csproj.CoreCompileInputs.cache
+C:\Git\MetaData-\MetaData.DataAccess\obj\Debug\MetaData.DataAccess.dll
+C:\Git\MetaData-\MetaData.DataAccess\obj\Debug\MetaData.DataAccess.pdb

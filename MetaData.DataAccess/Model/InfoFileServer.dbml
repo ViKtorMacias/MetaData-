@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="InfoFileServer" Class="InfoFileServerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TAURUS\DBDESASQLCLU1;Initial Catalog=InfoFileServer;Persist Security Info=True;User ID=victor" SettingsObjectName="MetaData.DataAccess.Properties.Settings" SettingsPropertyName="InfoFileServerConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.SP_FileInfo" Method="SP_FileInfo">
+    <Parameter Name="fileInfoName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="filesize" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Extension" Parameter="extension" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="DirectoryName" Parameter="directoryName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="LastAccessTimeUtc" Parameter="lastAccessTimeUtc" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CreationTime" Parameter="creationTime" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="LastWriteTimeUtc" Parameter="lastWriteTimeUtc" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Attributes" Parameter="attributes" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
