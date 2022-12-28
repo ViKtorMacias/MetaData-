@@ -1,0 +1,8 @@
+C:\Git\MetaData-\MetaData++\bin\Debug\MetaData++.exe.config
+C:\Git\MetaData-\MetaData++\bin\Debug\MetaData++.exe
+C:\Git\MetaData-\MetaData++\bin\Debug\MetaData++.pdb
+C:\Git\MetaData-\MetaData++\obj\Debug\MetaData++.csproj.AssemblyReference.cache
+C:\Git\MetaData-\MetaData++\obj\Debug\MetaData++.csproj.SuggestedBindingRedirects.cache
+C:\Git\MetaData-\MetaData++\obj\Debug\MetaData++.csproj.CoreCompileInputs.cache
+C:\Git\MetaData-\MetaData++\obj\Debug\MetaData++.exe
+C:\Git\MetaData-\MetaData++\obj\Debug\MetaData++.pdb
