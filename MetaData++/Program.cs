@@ -15,6 +15,7 @@ namespace MetaData__
             //{
             DriveInfo driveInfo = new DriveInfo(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location));
 
+<<<<<<< HEAD
                 // Obtiene la raíz de la unidad C:
                 DirectoryInfo root = driveInfo.RootDirectory;
                 // Recorre todos los directorios y subdirectorios de la raíz de la unidad C:
@@ -28,20 +29,53 @@ namespace MetaData__
         {
             long fileSize = fileInfo.Length;
             string sfilesize;
+=======
+            // Obtiene la raíz de la unidad C:
+            DirectoryInfo root = driveInfo.RootDirectory;
+            // Recorre todos los directorios y subdirectorios de la raíz de la unidad C:
+            RecursiveDirectorySearch(root);
+            // Obtiene todos los archivos y carpetas de la raíz de la unidad C:
+            FileSystemInfo[] fileSystemInfos = root.GetFileSystemInfos();
+            FileInfo[] fileInfos = root.GetFiles();
+            // Recorre cada archivo y carpeta y muestra su información de metadata
+            foreach (FileInfo fileInfo in fileInfos)
+            {
+                Console.WriteLine("Nombre: " + fileInfo.Name);
+                Console.WriteLine("Tamaño: " + ifilesize(fileInfo));
+                Console.WriteLine("Extension: " + fileInfo.Extension);
+                Console.WriteLine("Última modificación: " + fileInfo.LastWriteTime);
+                Console.WriteLine("Fecha Creación: " + fileInfo.CreationTime);
+                Console.WriteLine("Tipo: " + fileInfo.Attributes);
+                Console.WriteLine();
+              
+            }
+            Console.ReadLine();
+        }
+        static int ifilesize(FileInfo fileInfo)
+        {
+            long fileSize = fileInfo.Length;
+>>>>>>> a0f11fd776d42feed761ccbf15f325014beb4ed0
 
             if (fileSize < 1024)
             {
                 Console.WriteLine("Tamaño del archivo: " + fileSize + " bytes");
+<<<<<<< HEAD
                 sfilesize = fileSize + " bytes";
+=======
+>>>>>>> a0f11fd776d42feed761ccbf15f325014beb4ed0
             }
             else if (fileSize < 1024 * 1024)
             {
                 Console.WriteLine("Tamaño del archivo: " + fileSize / 1024 + " KB");
+<<<<<<< HEAD
                 sfilesize = fileSize / 1024 + " KB";
+=======
+>>>>>>> a0f11fd776d42feed761ccbf15f325014beb4ed0
             }
             else
             {
                 Console.WriteLine("Tamaño del archivo: " + fileSize / (1024 * 1024) + " MB");
+<<<<<<< HEAD
                 sfilesize = fileSize / (1024 * 1024) + " MB";
             }
             //if (fileSize < 1024 * 1024 * 1024)
@@ -94,6 +128,24 @@ namespace MetaData__
                
             }
             
+=======
+            }
+            return 0;
+        }
+        static void RecursiveDirectorySearch(DirectoryInfo directoryInfo)
+        {
+            // Muestra el nombre del directorio
+            Console.WriteLine(directoryInfo.Name);
+
+            // Obtiene todos los subdirectorios del directorio
+            DirectoryInfo[] subDirectories = directoryInfo.GetDirectories();
+
+            // Recorre cada subdirectorio y llama a la función de forma recursiva
+            foreach (DirectoryInfo subDirectory in subDirectories)
+            {
+                RecursiveDirectorySearch(subDirectory);
+            }
+>>>>>>> a0f11fd776d42feed761ccbf15f325014beb4ed0
         }
     }
 }
