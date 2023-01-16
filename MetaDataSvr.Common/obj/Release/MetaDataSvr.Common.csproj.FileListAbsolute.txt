@@ -1,0 +1,6 @@
+C:\Git\MetaData-\MetaDataSvr.Common\bin\Release\MetaDataSvr.Common.dll
+C:\Git\MetaData-\MetaDataSvr.Common\bin\Release\MetaDataSvr.Common.pdb
+C:\Git\MetaData-\MetaDataSvr.Common\obj\Release\MetaDataSvr.Common.csproj.AssemblyReference.cache
+C:\Git\MetaData-\MetaDataSvr.Common\obj\Release\MetaDataSvr.Common.csproj.CoreCompileInputs.cache
+C:\Git\MetaData-\MetaDataSvr.Common\obj\Release\MetaDataSvr.Common.dll
+C:\Git\MetaData-\MetaDataSvr.Common\obj\Release\MetaDataSvr.Common.pdb

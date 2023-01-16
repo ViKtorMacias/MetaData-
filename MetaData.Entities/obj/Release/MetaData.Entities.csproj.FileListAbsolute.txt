@@ -1,0 +1,6 @@
+C:\Git\MetaData-\MetaData.Entities\bin\Release\MetaData.Entities.dll
+C:\Git\MetaData-\MetaData.Entities\bin\Release\MetaData.Entities.pdb
+C:\Git\MetaData-\MetaData.Entities\obj\Release\MetaData.Entities.csproj.AssemblyReference.cache
+C:\Git\MetaData-\MetaData.Entities\obj\Release\MetaData.Entities.csproj.CoreCompileInputs.cache
+C:\Git\MetaData-\MetaData.Entities\obj\Release\MetaData.Entities.dll
+C:\Git\MetaData-\MetaData.Entities\obj\Release\MetaData.Entities.pdb

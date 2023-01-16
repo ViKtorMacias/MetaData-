@@ -1,10 +1,7 @@
 ﻿using NLog;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
 
 namespace MetaData__
 {
@@ -13,10 +10,10 @@ namespace MetaData__
         static void Main(string[] args)
         {
             DriveInfo[] allDrives = DriveInfo.GetDrives();
-
-            foreach (DriveInfo d in allDrives)
-            {
-                DriveInfo driveInfo = new DriveInfo(d.Name);
+           // var CurrentDirectory = Directory.GetCurrentDirectory();
+            //foreach (DriveInfo d in allDrives)
+            //{
+            DriveInfo driveInfo = new DriveInfo(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location));
 
                 // Obtiene la raíz de la unidad C:
                 DirectoryInfo root = driveInfo.RootDirectory;
@@ -24,7 +21,7 @@ namespace MetaData__
                 RecursiveDirectorySearch(root);
                 // Obtiene todos los archivos y carpetas de la raíz de la unidad C:
                 FileSystemInfo[] fileSystemInfos = root.GetFileSystemInfos();
-            }
+            //}
             Console.ReadLine();
         }
         static string ifilesize(FileInfo fileInfo)
@@ -47,6 +44,11 @@ namespace MetaData__
                 Console.WriteLine("Tamaño del archivo: " + fileSize / (1024 * 1024) + " MB");
                 sfilesize = fileSize / (1024 * 1024) + " MB";
             }
+            //if (fileSize < 1024 * 1024 * 1024)
+            //{
+            //    Console.WriteLine("Tamaño del archivo: " + fileSize / (1024 * 1024 * 1024) + " GB");
+            //    sfilesize = fileSize / (1024 * 1024 * 1024) + " GB";
+            //}
             return sfilesize;
         }
         static void RecursiveDirectorySearch(DirectoryInfo directoryInfo)
@@ -67,10 +69,10 @@ namespace MetaData__
                     Console.WriteLine("Nombre: " + fileInfo.Name);
                     Console.WriteLine("Tamaño: " + ifilesize(fileInfo));
                     Console.WriteLine("Extension: " + fileInfo.Extension);
-                    Console.WriteLine("Última modificación: " + fileInfo.DirectoryName);
+                    Console.WriteLine("DirectoryName: " + fileInfo.DirectoryName);
                     Console.WriteLine("Última modificación: " + fileInfo.LastAccessTimeUtc);
                     Console.WriteLine("Fecha Creación: " + fileInfo.CreationTime);
-                    Console.WriteLine("Fecha Creación: " + fileInfo.LastWriteTimeUtc);
+                    Console.WriteLine("Fecha escritura: " + fileInfo.LastWriteTimeUtc);
                     Console.WriteLine("Tipo: " + fileInfo.Attributes);
                     Console.WriteLine();
                     MetaData.DataAccess.Model.InfoFileServerDataContext infoFileServer = new MetaData.DataAccess.Model.InfoFileServerDataContext();
