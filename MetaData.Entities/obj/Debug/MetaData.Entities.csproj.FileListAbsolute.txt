@@ -4,3 +4,9 @@ C:\Git\MetaData-\MetaData.Entities\obj\Debug\MetaData.Entities.csproj.AssemblyRe
 C:\Git\MetaData-\MetaData.Entities\obj\Debug\MetaData.Entities.csproj.CoreCompileInputs.cache
 C:\Git\MetaData-\MetaData.Entities\obj\Debug\MetaData.Entities.dll
 C:\Git\MetaData-\MetaData.Entities\obj\Debug\MetaData.Entities.pdb
+C:\Git\MetaData++\MetaData.Entities\bin\Debug\MetaData.Entities.dll
+C:\Git\MetaData++\MetaData.Entities\bin\Debug\MetaData.Entities.pdb
+C:\Git\MetaData++\MetaData.Entities\obj\Debug\MetaData.Entities.csproj.AssemblyReference.cache
+C:\Git\MetaData++\MetaData.Entities\obj\Debug\MetaData.Entities.csproj.CoreCompileInputs.cache
+C:\Git\MetaData++\MetaData.Entities\obj\Debug\MetaData.Entities.dll
+C:\Git\MetaData++\MetaData.Entities\obj\Debug\MetaData.Entities.pdb
